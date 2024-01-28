@@ -6,7 +6,10 @@ module.exports = {
   },
   extends: [
     'standard',
-    'plugin:react/recommended'
+    'plugin:react/recommended',
+    'standard',
+    'standard-jsx',
+    'standard-react'
   ],
   overrides: [
     {
@@ -23,11 +26,13 @@ module.exports = {
   ],
   parserOptions: {
     ecmaVersion: 'latest',
-    sourceType: 'module'
+    sourceType: 'module',
+    babel: 'babel-eslint'
   },
   plugins: [
     'react'
   ],
   rules: {
+    'react/prop-types': 'off'
   }
 }

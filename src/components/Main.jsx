@@ -5,10 +5,10 @@ import RepositoryList from './RepositoryList'
 
 const Main = () => {
   return (
-        <View style={{ marginTop: Constants.statusBarHeight, flexGrow: 1 }}>
-            <Text>Rate repository Github</Text>
-            <RepositoryList />
-        </View>
+    <View style={{ marginTop: Constants.statusBarHeight, flexGrow: 1 }}>
+      <Text>Rate repository Github</Text>
+      <RepositoryList />
+    </View>
   )
 }
 
