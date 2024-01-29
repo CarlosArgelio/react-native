@@ -1,6 +1,6 @@
 import React from 'react'
 import { parseThousands } from '../utils/parseThousands'
-import { View } from 'react-native-web'
+import { View } from 'react-native'
 import StyledText from './StyledText'
 
 const RepositoryStats = (props) => {

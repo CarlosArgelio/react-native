@@ -2,13 +2,14 @@ import React from 'react'
 import { View, StyleSheet } from 'react-native'
 import StyledText from './StyledText'
 import RepositoryStats from './RepositoryStats'
+import theme from '../theme'
 
 const RepositoryItem = (props) => {
   return (
     <View key={props.id} style={styles.container}>
       <StyledText fontSize='subheading' fontWeight='bold'>Fullname: {props.fullName}</StyledText>
       <StyledText>{props.description}</StyledText>
-      <StyledText>{props.language}</StyledText>
+      <StyledText style={styles.language}>{props.language}</StyledText>
       <RepositoryStats {...props} />
     </View>
   )
@@ -20,10 +21,11 @@ const styles = StyleSheet.create({
     paddingBottom: 5,
     paddingTop: 5
   },
-  strong: {
-    color: '#09f',
-    fontWeight: 'bold',
-    marginBottom: 5
+  language: {
+    padding: 4,
+    color: theme.colors.white,
+    backgroundColor: theme.colors.primary,
+    alignSelf: 'flex-start'
   }
 })
 
